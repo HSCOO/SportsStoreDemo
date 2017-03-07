@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TouchPainterDemo.xcscheme</key>
+		<key>SportsStoreDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>18FD8DD91E65670D001717CA</key>
+		<key>18F18FC41E6D26EA009F0B86</key>
 		<dict>
 			<key>primary</key>
 			<true/>

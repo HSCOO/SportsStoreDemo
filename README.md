@@ -1,2 +1,0 @@
-# TouchPainterDemo
-Follow TouchPainter

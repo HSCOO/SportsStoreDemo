@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "18FD8DD91E65670D001717CA"
-               BuildableName = "TouchPainterDemo.app"
-               BlueprintName = "TouchPainterDemo"
-               ReferencedContainer = "container:TouchPainterDemo.xcodeproj">
+               BlueprintIdentifier = "18F18FC41E6D26EA009F0B86"
+               BuildableName = "SportsStoreDemo.app"
+               BlueprintName = "SportsStoreDemo"
+               ReferencedContainer = "container:SportsStoreDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18FD8DD91E65670D001717CA"
-            BuildableName = "TouchPainterDemo.app"
-            BlueprintName = "TouchPainterDemo"
-            ReferencedContainer = "container:TouchPainterDemo.xcodeproj">
+            BlueprintIdentifier = "18F18FC41E6D26EA009F0B86"
+            BuildableName = "SportsStoreDemo.app"
+            BlueprintName = "SportsStoreDemo"
+            ReferencedContainer = "container:SportsStoreDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18FD8DD91E65670D001717CA"
-            BuildableName = "TouchPainterDemo.app"
-            BlueprintName = "TouchPainterDemo"
-            ReferencedContainer = "container:TouchPainterDemo.xcodeproj">
+            BlueprintIdentifier = "18F18FC41E6D26EA009F0B86"
+            BuildableName = "SportsStoreDemo.app"
+            BlueprintName = "SportsStoreDemo"
+            ReferencedContainer = "container:SportsStoreDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "18FD8DD91E65670D001717CA"
-            BuildableName = "TouchPainterDemo.app"
-            BlueprintName = "TouchPainterDemo"
-            ReferencedContainer = "container:TouchPainterDemo.xcodeproj">
+            BlueprintIdentifier = "18F18FC41E6D26EA009F0B86"
+            BuildableName = "SportsStoreDemo.app"
+            BlueprintName = "SportsStoreDemo"
+            ReferencedContainer = "container:SportsStoreDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
