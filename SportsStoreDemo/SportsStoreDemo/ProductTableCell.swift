@@ -17,10 +17,9 @@ class ProductTableCell: UITableViewCell {
     
     @IBOutlet weak var stockField: UITextField!
     
-    var productId:Int?
+    var product:Product?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-      
-    }
+//    var productId:Int?
+    
+
 }
