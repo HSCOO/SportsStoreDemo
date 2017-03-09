@@ -6,13 +6,17 @@
 //  Copyright © 2017年 OnlyStu. All rights reserved.
 //
 
+//tip:对象模版模式
+
 import Foundation
 
-class Product {
+//原型模式
+class Product:NSObject,NSCopying {
     
     //对外get只读
     private(set) var name:String
-    private(set) var description:String
+//    private(set) var description:String
+    private(set) var productDescription:String
     private(set) var category:String
     
     //私有属性
@@ -26,8 +30,11 @@ class Product {
          stockLevel:Int) {
         
         self.name = name
-        self.description = description
+        self.productDescription = description
         self.category = category
+        
+        super.init()
+        
         self.price = price
         self.stockLevel = stockLevel
     }
@@ -47,5 +54,14 @@ class Product {
     var stockValue:Double{
         
         get{ return price * Double(stockLevel)}
+    }
+    
+    
+    func copy(with zone: NSZone? = nil) -> Any {
+        return Product.init(name: self.name,
+                            description: self.productDescription,
+                            category: self.category,
+                            price: self.price,
+                            stockLevel: self.stockLevel)
     }
 }
