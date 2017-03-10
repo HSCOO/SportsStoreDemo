@@ -18,18 +18,6 @@ class ViewController: UIViewController,UITableViewDataSource{
     @IBOutlet weak var totalStockLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
-//tip:对象模版模式
-//换成模版前
-//    var products = [
-//        ("Kayak","A boat for one person","Watersports",275.0,10),
-//        ("Lifejecket","Protective and fashionable","Watersports",48.95,14),
-//        ("Soccer Ball","FIFA-approved size and weight","Soccer",19.5,32),
-//        ("Coner Flags","Give your playing field a professional touch","Soccer",34.95,1),
-//        ("Stadium","Flat-packed 35,000-seat stadium","Soccer",79500.0,4 ),
-//        ("Thinking Cap","Improve your brain efficiency by 75%","Chess",16.0,8),
-//        ("Unstedy Chair","Secretly give your opponent a disadvantage","Chess",29.95,3),
-//        ("Human Chess Board","A fun game for the family","Chess",75.0,2),
-//        ("Bling-Bling King","Gold-plated,diamond-studded King","Chess",79500.0,4)]
     
     let logger = Logger<Product>(callback:handler)
     //tip:对象模版模式
@@ -100,14 +88,6 @@ class ViewController: UIViewController,UITableViewDataSource{
     func dispalyStockTotal(){
         
         //reduce就是遍历每个数组元素，并执行闭包
-        //这里表达的意思是，所有的 product.4相加
-//tip:对象模版模式
-//        换成模版前
-//        let stockTotal = products.reduce(0) { (total, product) -> Int in
-//            total + product.4
-//        }
-//        totalStockLabel.text = "\(stockTotal) Products in Stock"
-        
         //遍历数组，返回两个值
         let finalTotals:(Int,Double) = products.reduce((0,0.0)) { (total, product) -> (Int,Double) in
             
@@ -131,14 +111,6 @@ class ViewController: UIViewController,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell") as! ProductTableCell
         
         //记录当前的row值，为后面修改textFiled、steppter改变值用
-//tip:对象模版模式
-//换成模版前
-//        cell.productId = indexPath.row
-//        
-//        cell.nameLabel.text = product.0
-//        cell.descriptionLabel.text = product.1
-//        cell.stockStepper.value = Double(product.4)
-//        cell.stockField.text = String(product.4)
         let product = products[indexPath.row]
         cell.product = products[indexPath.row]
         cell.nameLabel.text = product.name
@@ -160,28 +132,7 @@ class ViewController: UIViewController,UITableViewDataSource{
                 //如果父视图是ProductTableCell
                 if let cell = currentCell as? ProductTableCell {
  
-                //得到当前row
-//tip:对象模版模式                    
-//换成模版前
-//                    if let id = cell.productId {
-//                        var newStockLevel:Int?
-//                        
-//                        //stepper、textfield的value改变方法是同一个
-//                        //value给newStockLevel赋值
-//                        if let stepper = sender as? UIStepper{
-//                            
-//                            newStockLevel = Int(stepper.value);
-//                        }
-//                        else if let textfield = sender as? UITextField {
-//                        
-//                            newStockLevel = Int((textfield.text)!)
-//                        }
-//                        
-//                        //最后把newStockLevel赋值给product.4
-//                        if let level = newStockLevel {
-//                            products[id].4 = level
-//                            cell.stockField.text = String(level)
-//                        }
+                    //得到当前row
                     if let product = cell.product {
                         
                         if let stepper = sender as? UIStepper{

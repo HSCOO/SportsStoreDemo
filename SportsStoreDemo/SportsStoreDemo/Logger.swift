@@ -8,6 +8,7 @@
 
 import Foundation
 
+//遵守NSObject、NSCopying协议的泛型
 class Logger<T> where T:NSObject,T:NSCopying{
 
     var dataItems:[T] = []
