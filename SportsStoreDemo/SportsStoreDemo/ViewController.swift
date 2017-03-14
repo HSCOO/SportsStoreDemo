@@ -8,18 +8,12 @@
 
 import UIKit
 
-var handler = {(p:Product) in
-
-    print("Change:\(p.name) \(p.stockLevel) items in stock")
-}
-
 class ViewController: UIViewController,UITableViewDataSource{
  
     @IBOutlet weak var totalStockLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     
-    let logger = Logger<Product>(callback:handler)
     //tip:对象模版模式
     //换成模版后
     var products = [
@@ -145,7 +139,7 @@ class ViewController: UIViewController,UITableViewDataSource{
                         }
                         cell.stockStepper.value = Double(product.stockLevel)
                         cell.stockField.text = String(product.stockLevel)
-                        logger.logItem(item: product)
+                        productLogger.logItem(item: product)
                 }
                     //执行完跳出循环
                     break
