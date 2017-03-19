@@ -9,18 +9,23 @@
 /* Begin PBXBuildFile section */
 		18008DE01E6E861000D51A26 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18008DDF1E6E861000D51A26 /* Utils.swift */; };
 		18008DE21E6E89CF00D51A26 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18008DE11E6E89CF00D51A26 /* Product.swift */; };
+		188BF91E1E7E139A00B0F384 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF91D1E7E139A00B0F384 /* NetworkConnection.swift */; };
+		188BF9201E7E150B00B0F384 /* NetworkPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF91F1E7E150B00B0F384 /* NetworkPool.swift */; };
 		18F18FC91E6D26EA009F0B86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F18FC81E6D26EA009F0B86 /* AppDelegate.swift */; };
 		18F18FCB1E6D26EA009F0B86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F18FCA1E6D26EA009F0B86 /* ViewController.swift */; };
 		18F18FCE1E6D26EA009F0B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F18FCC1E6D26EA009F0B86 /* Main.storyboard */; };
 		18F18FD01E6D26EA009F0B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F18FCF1E6D26EA009F0B86 /* Assets.xcassets */; };
 		18F18FD31E6D26EA009F0B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F18FD11E6D26EA009F0B86 /* LaunchScreen.storyboard */; };
 		18F18FDB1E6D30F6009F0B86 /* ProductTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F18FDA1E6D30F6009F0B86 /* ProductTableCell.swift */; };
+		18FE37041E7E45EE00B34D8F /* ProductDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE37031E7E45EE00B34D8F /* ProductDataStore.swift */; };
 		18FEE2891E7116940030AADE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FEE2881E7116940030AADE /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18008DDF1E6E861000D51A26 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		18008DE11E6E89CF00D51A26 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		188BF91D1E7E139A00B0F384 /* NetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		188BF91F1E7E150B00B0F384 /* NetworkPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkPool.swift; sourceTree = "<group>"; };
 		18F18FC51E6D26EA009F0B86 /* SportsStoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsStoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F18FC81E6D26EA009F0B86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F18FCA1E6D26EA009F0B86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +34,7 @@
 		18F18FD21E6D26EA009F0B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F18FD41E6D26EA009F0B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18F18FDA1E6D30F6009F0B86 /* ProductTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableCell.swift; sourceTree = "<group>"; };
+		18FE37031E7E45EE00B34D8F /* ProductDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDataStore.swift; sourceTree = "<group>"; };
 		18FEE2881E7116940030AADE /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +81,9 @@
 				18F18FDA1E6D30F6009F0B86 /* ProductTableCell.swift */,
 				18008DE11E6E89CF00D51A26 /* Product.swift */,
 				18FEE2881E7116940030AADE /* Logger.swift */,
+				188BF91D1E7E139A00B0F384 /* NetworkConnection.swift */,
+				188BF91F1E7E150B00B0F384 /* NetworkPool.swift */,
+				18FE37031E7E45EE00B34D8F /* ProductDataStore.swift */,
 				18008DDE1E6E85F000D51A26 /* Utils */,
 				18F18FCC1E6D26EA009F0B86 /* Main.storyboard */,
 				18F18FCF1E6D26EA009F0B86 /* Assets.xcassets */,
@@ -157,10 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188BF9201E7E150B00B0F384 /* NetworkPool.swift in Sources */,
+				18FE37041E7E45EE00B34D8F /* ProductDataStore.swift in Sources */,
 				18008DE21E6E89CF00D51A26 /* Product.swift in Sources */,
 				18FEE2891E7116940030AADE /* Logger.swift in Sources */,
 				18F18FDB1E6D30F6009F0B86 /* ProductTableCell.swift in Sources */,
 				18F18FCB1E6D26EA009F0B86 /* ViewController.swift in Sources */,
+				188BF91E1E7E139A00B0F384 /* NetworkConnection.swift in Sources */,
 				18F18FC91E6D26EA009F0B86 /* AppDelegate.swift in Sources */,
 				18008DE01E6E861000D51A26 /* Utils.swift in Sources */,
 			);
