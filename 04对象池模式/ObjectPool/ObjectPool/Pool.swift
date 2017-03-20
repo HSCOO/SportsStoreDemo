@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//泛型数据
 class Pool<T>{
 
     private var data = [T]()
@@ -31,6 +31,7 @@ class Pool<T>{
     func getFromPool() -> T? {
         
         var result:T?
+        //信号量减1，判断是否还有信号
         let sempResult = semaphore.wait(timeout: DispatchTime.distantFuture)
         if  sempResult == DispatchTimeoutResult.success {
             //同步删除元素
@@ -38,7 +39,6 @@ class Pool<T>{
                 result = self.data.remove(at: 0)
             }
         }
-        print("data--getFromPool--\(data)")
         return result
     }
     //返还对象给data数组
@@ -46,8 +46,8 @@ class Pool<T>{
         
         arrayQ.async {
             self.data.append(item)
+            //信号量加1
             self.semaphore.signal()
-            print("data--returnToPool--\(self.data)")
         }
     }
 }

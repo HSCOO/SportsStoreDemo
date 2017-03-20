@@ -14,7 +14,7 @@ final class Library{
     private let pool:Pool<Book>
     
     //初始化对象池里面的对象数量
-    init(stockLevel:Int) {
+    private init(stockLevel:Int) {
         books = [Book]()
         for count in 1 ... stockLevel {
             books.append(Book.init(author: "Dickens", title: "Hard times", stock: count))
