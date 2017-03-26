@@ -49,55 +49,56 @@ final class ProductDataSoure{
     
     private var productData :[Product] = [
         
-        Product.init(name: "Kayak",
+        //工厂方法创建对象
+        Product.createProduct(name: "Kayak",
                      description: "A boat for one person",
                      category: "Watersports",
                      price: 275.0,
                      stockLevel: 10),
         
-        Product.init(name: "Lifejecket",
+        Product.createProduct(name: "Lifejecket",
                      description: "Protective and fashionable",
                      category: "Watersports",
                      price: 48.95,
                      stockLevel: 14),
         
-        Product.init(name: "Soccer Ball",
+        Product.createProduct(name: "Soccer Ball",
                      description: "FIFA-approved size and weight",
                      category: "Soccer",
                      price: 19.5,
                      stockLevel: 32),
         
-        Product.init(name: "Coner Flags",
+        Product.createProduct(name: "Coner Flags",
                      description: "Give your playing field a professional touch",
                      category: "Soccer",
                      price: 34.95,
                      stockLevel: 1),
         
-        Product.init(name: "Stadium",
+        Product.createProduct(name: "Stadium",
                      description: "Flat-packed 35,000-seat stadium",
                      category: "Soccer",
                      price: 79500.0,
                      stockLevel: 4),
         
-        Product.init(name: "Thinking Cap",
+        Product.createProduct(name: "Thinking Cap",
                      description: "Improve your brain efficiency by 75%",
                      category: "Chess",
                      price: 16.0,
                      stockLevel: 8),
         
-        Product.init(name: "Unstedy Chair",
+        Product.createProduct(name: "Unstedy Chair",
                      description: "Secretly give your opponent a disadvantage",
                      category: "Chess",
                      price: 29.95,
                      stockLevel: 3),
         
-        Product.init(name: "Human Chess Board",
+        Product.createProduct(name: "Human Chess Board",
                      description: "A fun game for the family",
                      category: "Chess",
                      price: 75.0,
                      stockLevel: 2),
         
-        Product.init(name: "Bling-Bling King",
+        Product.createProduct(name: "Bling-Bling King",
                      description: "Gold-plated,diamond-studded King",
                      category: "Chess",
                      price: 79500.0,
