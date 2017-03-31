@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		18008DE01E6E861000D51A26 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18008DDF1E6E861000D51A26 /* Utils.swift */; };
 		18008DE21E6E89CF00D51A26 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18008DE11E6E89CF00D51A26 /* Product.swift */; };
+		18024DE81E8B9236001ECD1B /* StockValueImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18024DE71E8B9236001ECD1B /* StockValueImplementations.swift */; };
+		18024DEA1E8B9541001ECD1B /* StockValueFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18024DE91E8B9541001ECD1B /* StockValueFactories.swift */; };
 		188BF91E1E7E139A00B0F384 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF91D1E7E139A00B0F384 /* NetworkConnection.swift */; };
 		188BF9201E7E150B00B0F384 /* NetworkPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188BF91F1E7E150B00B0F384 /* NetworkPool.swift */; };
 		18F18FC91E6D26EA009F0B86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F18FC81E6D26EA009F0B86 /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		18008DDF1E6E861000D51A26 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		18008DE11E6E89CF00D51A26 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		18024DE71E8B9236001ECD1B /* StockValueImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockValueImplementations.swift; sourceTree = "<group>"; };
+		18024DE91E8B9541001ECD1B /* StockValueFactories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockValueFactories.swift; sourceTree = "<group>"; };
 		188BF91D1E7E139A00B0F384 /* NetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
 		188BF91F1E7E150B00B0F384 /* NetworkPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkPool.swift; sourceTree = "<group>"; };
 		18F18FC51E6D26EA009F0B86 /* SportsStoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsStoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +88,8 @@
 				188BF91D1E7E139A00B0F384 /* NetworkConnection.swift */,
 				188BF91F1E7E150B00B0F384 /* NetworkPool.swift */,
 				18FE37031E7E45EE00B34D8F /* ProductDataStore.swift */,
+				18024DE71E8B9236001ECD1B /* StockValueImplementations.swift */,
+				18024DE91E8B9541001ECD1B /* StockValueFactories.swift */,
 				18008DDE1E6E85F000D51A26 /* Utils */,
 				18F18FCC1E6D26EA009F0B86 /* Main.storyboard */,
 				18F18FCF1E6D26EA009F0B86 /* Assets.xcassets */,
@@ -166,8 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18024DE81E8B9236001ECD1B /* StockValueImplementations.swift in Sources */,
 				188BF9201E7E150B00B0F384 /* NetworkPool.swift in Sources */,
 				18FE37041E7E45EE00B34D8F /* ProductDataStore.swift in Sources */,
+				18024DEA1E8B9541001ECD1B /* StockValueFactories.swift in Sources */,
 				18008DE21E6E89CF00D51A26 /* Product.swift in Sources */,
 				18FEE2891E7116940030AADE /* Logger.swift in Sources */,
 				18F18FDB1E6D30F6009F0B86 /* ProductTableCell.swift in Sources */,
@@ -297,11 +305,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 832N2G49H3;
 				INFOPLIST_FILE = SportsStoreDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onlystu.SportsStoreDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -310,11 +320,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 832N2G49H3;
 				INFOPLIST_FILE = SportsStoreDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onlystu.SportsStoreDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
